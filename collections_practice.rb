@@ -40,3 +40,7 @@ end
 def find_a(array)
   array.select { |a_grabber| a_grabber.start_with?("a") }
 end
+
+def sum_array(array)
+  array.inject { |num_1, num_2| num_1 + num _2 }
+end
