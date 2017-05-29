@@ -19,6 +19,7 @@ def reverse_array(array)
   array.reverse
 end
 
+=begin
 def kesha_maker(array)
   kesha_array = []
   array.each do |character|
@@ -27,4 +28,15 @@ def kesha_maker(array)
   end
   kesha_array
 end
+=end
 
+def kesha_maker(array)
+  array.collect do |character|
+    character[2] = "$"
+    character
+  end
+end
+
+def find_a(array)
+  array.select { |a_grabber| a_grabber.start_with?("a") }
+end
