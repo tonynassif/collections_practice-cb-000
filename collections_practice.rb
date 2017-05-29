@@ -42,5 +42,9 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.inject { |num_1, num_2| num_1 + num _2 }
+  array.inject { |num_1, num_2| num_1 + num_2 }
+end
+
+def add_s(array)
+  array.each_with_index.collect{ |element, index| index != 1 ? element + "s" : element }
 end
