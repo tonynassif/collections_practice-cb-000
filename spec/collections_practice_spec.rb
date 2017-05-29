@@ -32,7 +32,7 @@ describe 'collections practice' do
 
   describe '#swap_elements_from_to' do
     it 'swap the index argument with the destination_index argument' do
-      expect (swap_elements_from_to(["a", "b", "c"],0,2)).to eq(["c", "b", "a"])
+      expect(swap_elements_from_to(["a", "b", "c"],0,2)).to eq(["c", "b", "a"])
     end
   end
 
